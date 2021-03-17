@@ -58,7 +58,7 @@ img {
 	width: 100%;
 }
 
-.opcoes {
+.lembrar {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -68,14 +68,34 @@ img {
 	font-size: 0.9rem;
 }
 
-.check {
+.lembrar input {
 	margin: 0 15px 0 0;
 }
 
-@media (min-width: 375px) {
+.opcoes {
+	margin: 15px 0 0 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
 }
 
-@media (min-width: 425px) {
+.opcoes div {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.opcoes div span a {
+	color: black;
+	text-decoration: none;
+}
+
+@media (max-width: 425px) {
+	.opcoes div span a {
+		font-size: 0.7rem;
+	}
 }
 
 @media (min-width: 768px) {
